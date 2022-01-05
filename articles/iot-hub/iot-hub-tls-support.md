@@ -38,7 +38,7 @@ Pour afficher un aperçu du certificat de serveur ECC d’IoT Hub :
     - `TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384`
 1. Connectez votre client à la préversion d’IoT Hub.
 
-## <a name="tls-12-enforcement-available-in-select-regions"></a>TLS 1.2 n’est disponible que dans certaines régions
+## <a name="tls-12-enforcement-available-in-select-regions"></a>L'imposition de TLS 1.2 n’est disponible que dans certaines régions
 
 Pour renforcer la sécurité, configurez vos hubs IoT pour autoriser *uniquement* les connexions client qui utilisent la version 1.2 du protocole TLS et pour appliquer l’utilisation des [suites de chiffrement](#cipher-suites). Cette fonctionnalité n'est prise en charge que dans ces régions :
 
@@ -46,9 +46,9 @@ Pour renforcer la sécurité, configurez vos hubs IoT pour autoriser *uniquement
 * États-Unis - partie centrale méridionale
 * USA Ouest 2
 * Gouvernement des États-Unis – Arizona
-* US Gov Virginie (La prise en charge de TLS 1.0/1.1 n’est pas disponible dans cette région. L’application de TLS 1.2 doit être activée, sinon la création d’un hub IoT échoue.)
+* US Gov Virginie (La prise en charge de TLS 1.0/1.1 n’est pas disponible dans cette région. L’imposition de TLS 1.2 doit être activée, sinon la création d’un hub IoT échoue.)
 
-Pour activer l’application de TLS 1.2, suivez les étapes décrites dans [Créer un hub IoT dans Portail Azure](iot-hub-create-through-portal.md), sauf
+Pour activer l’imposition de TLS 1.2, suivez les étapes décrites dans [Créer un hub IoT dans Portail Azure](iot-hub-create-through-portal.md), sauf
 
 - Choisissez une **région** dans la liste ci-dessus.
 - Sous **Gestion -> Avancé -> Protocole TLS -> Version TLS minimale**, sélectionnez **1.2**. Ce paramètre s’affiche uniquement pour les hubs IoT créés dans une région prise en charge.
@@ -96,7 +96,7 @@ Les hubs IoT configurés pour accepter uniquement TLS 1.2 appliquent également
 * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
 * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
 
-Pour les hubs IoT non configurés pour l’application de TLS 1.2, ce protocole fonctionne quand même avec les suites de chiffrement suivantes :
+Pour les hubs IoT non configurés pour l’imposition de TLS 1.2, ce protocole fonctionne quand même avec les suites de chiffrement suivantes :
 
 * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
 * `TLS_DHE_RSA_WITH_AES_256_GCM_SHA384`
